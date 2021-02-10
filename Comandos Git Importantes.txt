@@ -1,0 +1,31 @@
+Comandos Git Importantes
+
+history: comando unix que permite ver todos los comandos ejecutados
+code: comando para abrir visual studio code, se puede poner el nombre del archivo para abrirlo directamente
+
+git init -> Comando para iniciar un repositorio git
+
+git add -> Comando para añadir un archivo al repositorio, se puede indicar el nombre especifico o se ingresa punto para subir todo
+
+git rm --cached [archivo] -> comando para revertir el add 
+
+git commit -m "mensaje" -> realizar un commit, importante: si no se ingresa un mensaje la consola mostrara el editor vim
+cuando esto suceda nos pedira que agreguemos un mensaje y saldremos de el con la combinacion: esc + shift z + shift z
+
+git log -> muestra los logs, se puede sacar el log de un archivo especifico
+
+git log --stat -> muestra los logs, indicando los archivos modificados 
+nota: Si hay demasiados logs, nos iremos moviendo con las direccionales y/o enter, para salir presionamos la tecla q
+
+git status -> obtener el status del repositorio
+
+git config --global user.name "nombre usuario" -> comando para actualizar el nombre del usuario global
+
+git config --global user.mail "correo" -> comando para actualizar el correo del usuario global
+
+git diff -> comando para obtener diferencias en dos revisiones
+
+git checkout [origen] [archivo] -> git checkout para obtener un archivo especifico, se puede especificar una revision para volver a una version anterior. 
+Hay que ser cuidadosos con el checkout ya que podriamos eliminar datos.
+
+git reset [version] --hard -> comando para volver a una version anterior, se descarta todos los cambios a la revision especifica.
