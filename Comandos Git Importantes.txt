@@ -29,3 +29,5 @@ git checkout [origen] [archivo] -> git checkout para obtener un archivo especifi
 Hay que ser cuidadosos con el checkout ya que podriamos eliminar datos.
 
 git reset [version] --hard -> comando para volver a una version anterior, se descarta todos los cambios a la revision especifica.
+
+git reset HEAD -> comando para remover del staging los archivos (similar a git rm --cached)
