@@ -42,3 +42,6 @@ git merge -> Comando para unir dos ramas
 
 git pull -> Descarga los cambios del repositorio remoto y los envia hacia mi directorio de trabajo
 
+git commit -am "mensaje" -> commando para commitear cambios, combina git add y git commit, pero solo funciona con archivos que ya existan en el repo
+no funciona con archivos nuevos.
+
