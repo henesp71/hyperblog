@@ -47,3 +47,9 @@ no funciona con archivos nuevos.
 
 git branch [nombrerama] -> comando para crear una ramas (luego se debe usar git checkout para moverse a la rama)
 
+git branch -> listar las ramas
+
+Para hacer un Merge se debe estar en la rama resultado, normalmente debemos estar en Master.
+Comandos>
+git checkout Master
+git merge cabecera 
