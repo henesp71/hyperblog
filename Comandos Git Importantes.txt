@@ -31,3 +31,14 @@ Hay que ser cuidadosos con el checkout ya que podriamos eliminar datos.
 git reset [version] --hard -> comando para volver a una version anterior, se descarta todos los cambios a la revision especifica.
 
 git reset HEAD -> comando para remover del staging los archivos (similar a git rm --cached)
+
+git clone [clone] -> comando para clonar un repositorio remoto
+
+git push -> subir cambios al repositorio remoto
+
+git fetch -> Descarga los cambios del repositorio remoto
+
+git merge -> Comando para unir dos ramas
+
+git pull -> Descarga los cambios del repositorio remoto y los envia hacia mi directorio de trabajo
+
