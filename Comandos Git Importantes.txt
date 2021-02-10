@@ -53,3 +53,5 @@ Para hacer un Merge se debe estar en la rama resultado, normalmente debemos esta
 Comandos>
 git checkout Master
 git merge cabecera 
+(se abrira vim para confirmar el merge, para salir Esc + shift Z + shift Z)
+
