@@ -63,3 +63,5 @@ git remote -> muestra el origen
 git remote -v -> verbal
 
 git push origin master -> Enviarle al origen la rama Master
+git pull origin master -> Traer los cambios del remoto hacia la rama maestra local
+git pull origin master --allow-unrelated-histories -> Permitir fusionar historias no relacionadas
