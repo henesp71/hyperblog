@@ -97,3 +97,12 @@ Host *
 
 Agrega tu llave
 ssh-add -K ~/.ssh/id_rsa
+
+* Recomendacion: siempre se debe crear una llave privada y una publica por cada computadora
+
+En github debemos agregar la llave publica de nuestra computadora en la sección de settings de nuestro perfil en el tab SSH and GPG keys y agregar nuestra llave publica
+posteriormente debemos situarnos en nuestro repositorio y enlazarlo mediante SSH
+
+git remote -v
+git remove set-url origin {URL}
+ejemplo: $ git remote set-url origin git@github.com:henesp71/hyperblog.git
