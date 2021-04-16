@@ -65,3 +65,35 @@ git remote -v -> verbal
 git push origin master -> Enviarle al origen la rama Master
 git pull origin master -> Traer los cambios del remoto hacia la rama maestra local
 git pull origin master --allow-unrelated-histories -> Permitir fusionar historias no relacionadas
+
+SSH -> Conocido como secure share es el mecanismo de comunicación en el que se utilizan llaves privadas (quedan en el origen) y llaves publicas que se envian hacia el destinatario,
+el destinatario puede cifrar los mensajes con la llave publica y este mensaje solo podrá ser decifrado con la llave privada que lo tiene el origen
+Los comandos para configurar SSH son los siguientes:
+
+Generar una nueva llave SSH: (Cualquier sistema operativo)
+ssh-keygen -t rsa -b 4096 -C "youremail@example.com"
+
+Comprobar proceso y agregarlo (Windows)
+eval $(ssh-agent - s)
+ssh-add ~/.ssh/id_rsa
+
+Comprobar proceso y agregarlo (Mac)
+eval "$(ssh-agent -s)"
+
+¿Usas macOS Sierra 10.12.2 o superior? Haz lo siguiente:
+cd ~/.ssh
+
+Crea un archivo config… Con Vim 
+vim config
+
+Con VSCode: 
+code config
+
+Pega la siguiente configuración en el archivo…
+Host *
+  AddKeysToAgent yes
+  UseKeychain yes
+  IdentityFile ~/.ssh/id_rsa
+
+Agrega tu llave
+ssh-add -K ~/.ssh/id_rsa
