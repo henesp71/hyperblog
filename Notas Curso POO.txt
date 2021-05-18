@@ -1,0 +1,38 @@
+¿Porque aprender POO?
+    Programar mas rapido
+    Dejar de ser un JR
+    Dejar de copiar y pegar codigo
+
+Que haremos?
+Analizar -> Plasmar -> Programar
+
+Analisis:   Observacion, entedimiento, lectura
+Plasmar:    Digramas
+Programar:  Lenguajes de programacion
+
+¿Que resuelve la POO?
+    Se encarga de resolver muchos de los huecos de la programacion estructurada, basicamente surge de todos los problemas que deja la PE
+    - Codigo muy largo
+    - Si algo falla, todo rompe (programacion secuencial)
+    - Codigo dificil de mantener
+    - codigo espagueti
+
+4 pilares
+Clases
+Propiedades
+Metodos
+Objeto
+
+4 Elementos
+Encapsulamiento
+Abstraccion
+Herencia
+Polimorfismo
+
+Lenguajes orientados a objetos
+Java, php, python, js, C#, Ruby, Kotlin
+
+Java: Orientacion a objetos, Android, Server Side 
+Php: Lenguaje interpretado, pensado para la web, server side
+Python: Diseñado para ser facil de usar, multiples usos: web, server side, analisis de datos, machine learning, etc.
+JavaScript: Lenguaje interpretado, orienta a objetos pero basado en prototipos, pensado para la web
