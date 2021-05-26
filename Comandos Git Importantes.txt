@@ -71,38 +71,54 @@ el destinatario puede cifrar los mensajes con la llave publica y este mensaje so
 Los comandos para configurar SSH son los siguientes:
 
 Generar una nueva llave SSH: (Cualquier sistema operativo)
-ssh-keygen -t rsa -b 4096 -C "youremail@example.com"
+  ssh-keygen -t rsa -b 4096 -C "youremail@example.com"
 
 Comprobar proceso y agregarlo (Windows)
-eval $(ssh-agent - s)
-ssh-add ~/.ssh/id_rsa
+  eval $(ssh-agent - s)
+  ssh-add ~/.ssh/id_rsa
 
 Comprobar proceso y agregarlo (Mac)
-eval "$(ssh-agent -s)"
+  eval "$(ssh-agent -s)"
 
 ¿Usas macOS Sierra 10.12.2 o superior? Haz lo siguiente:
-cd ~/.ssh
+  cd ~/.ssh
 
-Crea un archivo config… Con Vim 
-vim config
+  Crea un archivo config… Con Vim 
+    vim config
 
-Con VSCode: 
-code config
+  Con VSCode: 
+    code config
 
-Pega la siguiente configuración en el archivo…
-Host *
-  AddKeysToAgent yes
-  UseKeychain yes
-  IdentityFile ~/.ssh/id_rsa
+  Pega la siguiente configuración en el archivo…
+  Host *
+    AddKeysToAgent yes
+    UseKeychain yes
+    IdentityFile ~/.ssh/id_rsa
 
-Agrega tu llave
-ssh-add -K ~/.ssh/id_rsa
+  Agrega tu llave
+    ssh-add -K ~/.ssh/id_rsa
 
 * Recomendacion: siempre se debe crear una llave privada y una publica por cada computadora
 
 En github debemos agregar la llave publica de nuestra computadora en la sección de settings de nuestro perfil en el tab SSH and GPG keys y agregar nuestra llave publica
 posteriormente debemos situarnos en nuestro repositorio y enlazarlo mediante SSH
 
-git remote -v
-git remove set-url origin {URL}
-ejemplo: $ git remote set-url origin git@github.com:henesp71/hyperblog.git
+Reenlazar un proyecto
+  git remote -v
+  git remove set-url origin {URL}
+  ejemplo: $ git remote set-url origin git@github.com:henesp71/hyperblog.git
+
+Continuamos con mas comandos:
+  git log -> muestra los cambios realizados
+  git log --all -> muestra todos los cambios realizados
+  git log --all --graph --decorate --oneline -> muestra los cambios realizados pero con un grafico
+Para este ultimo comando podemos utilizar un alias, con esto reemplazamos todo el comando con un alias, ejemplo:
+  alias arbolito="git log --all --graph --decorate --oneline"
+Ahora el comando arbolito servira para mostrar 
+
+Para agregar un tag podemos usar el siguiente comando:
+  git tag -a {Nombre del tag} -m "Mensaje" {Hash del commit}
+  ejemplo: git tag -a v0.1 -m "Mensaje" 46fa078
+
+git tag -> lista de todos los tags
+git 
